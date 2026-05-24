@@ -1,446 +1,475 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <head>
-            <meta charset="UTF-8" />
-            <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0"
-            />
-            <meta
-                name="description"
-                content="Yash Jain - Senior AI & Backend Engineer Resume"
-            />
-            <!-- DSA Roadmap specific meta -->
-            <meta
-                name="keywords"
-                content="DSA, Data Structures, Algorithms, Programming, Interview Preparation"
-            />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yash Jain | Senior AI & Backend Engineer</title>
+        <meta name="description" content="Senior AI & Backend Engineer specializing in LLM systems, RAG pipelines, and scalable backend architecture." />
 
-            <!-- Title -->
-            <title>Yash Jain - AI & Backend Engineer</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/Profile_Picture.PNG" />
+        <link rel="apple-touch-icon" href="assets/Profile_Picture.PNG" />
 
-            <!-- Favicon -->
-            <link
-                rel="icon"
-                type="image/png"
-                href="https://avatars1.githubusercontent.com/u/44037814?s=400&u=1a0873bce225b71de4f98d9c234901f5329be8f2&v=4"
-            />
+        <!-- Open Graph / Social share -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Yash Jain | Senior AI & Backend Engineer" />
+        <meta property="og:description" content="Senior AI & Backend Engineer specializing in LLM systems, RAG pipelines, and scalable backend architecture." />
+        <meta property="og:image" content="https://yashjaincodex.github.io/assets/Profile_Picture.PNG" />
+        <meta property="og:url" content="https://yashjaincodex.github.io" />
 
-            <!-- Open Graph tags for social previews -->
-            <meta
-                property="og:title"
-                content="Yash Jain - AI & Backend Engineer"
-            />
-            <meta property="og:type" content="website" />
-            <meta
-                property="og:description"
-                content="Senior AI & Backend Engineer, experienced in LLM applications, Backend APIs, Flask, Machine Learning, and software development."
-            />
-            <meta property="og:url" content="https://yashjaincodex.github.io" />
-            <meta
-                property="og:image"
-                content="https://avatars1.githubusercontent.com/u/44037814?s=400&u=1a0873bce225b71de4f98d9c234901f5329be8f2&v=4"
-            />
+        <!-- Twitter card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Yash Jain | Senior AI & Backend Engineer" />
+        <meta name="twitter:description" content="Senior AI & Backend Engineer specializing in LLM systems, RAG pipelines, and scalable backend architecture." />
+        <meta name="twitter:image" content="https://yashjaincodex.github.io/assets/Profile_Picture.PNG" />
 
-            <!-- Font Awesome CDN -->
-            <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            />
-
-            <!-- Styles and Font imports -->
-            <link rel="stylesheet" href="style.css" />
-            <link
-                href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap"
-                rel="stylesheet"
-            />
-        </head>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+        <script defer src="script.js"></script>
     </head>
     <body>
-        <!-- Small compact header -->
-        <div class="compact-header">
-            <img
-                class="compact-photo"
-                src="https://avatars1.githubusercontent.com/u/44037814?s=400&u=1a0873bce225b71de4f98d9c234901f5329be8f2&v=4"
-                alt="Yash Jain"
-            />
-            <div class="compact-details">
-                <span class="compact-name">Yash Jain</span>
-                <span class="compact-role">Senior AI & Backend Engineer</span>
+        <div class="bg-gradient"></div>
+        <div class="noise-overlay"></div>
+        <canvas id="particles-canvas"></canvas>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <!-- NAVBAR -->
+        <header class="navbar" id="navbar">
+            <div class="logo">YJ.</div>
+            <nav id="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <a href="assets/Yash_Jain_Resume.pdf" class="resume-btn" download>Resume ↓</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="assets/Yash_Jain_Resume.pdf" class="mobile-resume" download>Download Resume</a>
         </div>
 
-        <div class="hero">
-            <div class="profile-photo">
-                <img
-                    src="https://avatars1.githubusercontent.com/u/44037814?s=400&amp;u=1a0873bce225b71de4f98d9c234901f5329be8f2&amp;v=4"
-                    alt="Yash Jain"
-                />
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+
+                <h1 class="hero-greeting">
+                    Hi there, I'm Yash Jain
+                    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="42" height="42" alt="wave" class="wave-gif" />
+                </h1>
+
+                <p class="hero-subtitle">
+                    🚀 Senior AI &amp; Backend Engineer &nbsp;|&nbsp; Tech Content Creator
+                </p>
+
+                <div class="typewriter-wrap">
+                    <span id="typewriter"></span><span class="type-cursor">|</span>
+                </div>
+
+<div class="hero-buttons">
+                    <a href="#contact" class="primary-btn">Let's Connect →</a>
+                    <a href="#projects" class="secondary-btn">View Projects</a>
+                    <a href="assets/Yash_Jain_Resume.pdf" class="outline-btn" download>Resume ↓</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/yashjaincodex" target="_blank" rel="noopener" title="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/yashjaincodex" target="_blank" rel="noopener" title="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://www.youtube.com/@yashjaincodex" target="_blank" rel="noopener" title="YouTube">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        YouTube
+                    </a>
+                    <a href="https://topmate.io/yashjaincodex" target="_blank" rel="noopener" title="Topmate">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                        Topmate
+                    </a>
+                    <a href="https://yashjaincodex.medium.com" target="_blank" rel="noopener" title="Medium">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                        Medium
+                    </a>
+                </div>
             </div>
-            <h1>
-                Hi there, I'm Yash Jain
-                <img
-                    src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
-                    width="30px"
-                />
-            </h1>
-            <h2>🚀 Senior AI & Backend Engineer</h2>
-            <div class="socials">
-                <a href="https://github.com/yashjaincodex" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/yashjaincodex"
-                    target="_blank"
-                >
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a
-                    href="https://www.youtube.com/@yashjaincodex"
-                    target="_blank"
-                >
-                    <i class="fab fa-youtube"></i> YouTube
-                </a>
-                <a href="https://topmate.io/yashjaincodex" target="_blank">
-                    <i class="fas fa-link"></i> Topmate
-                </a>
-                <a href="https://yashjaincodex.medium.com" target="_blank">
-                    <i class="fab fa-medium"></i> Medium
-                </a>
-                <a href="dsa-roadmap.html" class="roadmap-link" target="_blank">
-                    <i class="fas fa-map-marked-alt"></i> DSA Roadmap
-                </a>
+
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="image-glow"></div>
+                    <div class="image-ring">
+                        <div class="image-card">
+                            <img src="assets/Profile_Picture.PNG" alt="Yash Jain" />
+                        </div>
+                    </div>
+                    <div class="floating-chip chip-1">
+                        <span>LangGraph</span>
+                    </div>
+                    <div class="floating-chip chip-2">
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="floating-chip chip-3">
+                        <span>RAG Systems</span>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
-            <section class="experience-section">
-                <h3>👨‍💻 Experience</h3>
+        <!-- ABOUT -->
+        <!-- EXPERIENCE -->
+        <section class="section" id="experience">
+            <div class="section-header">
+                <span class="section-tag">EXPERIENCE</span>
+                <h2>Professional Journey</h2>
+            </div>
 
-                <div class="company-block">
-                    <h4>Quantzig <span class="location">Remote</span></h4>
-                    <div class="role">
-                        Senior AI Engineer
-                        <span class="date">Apr 2024 – Present</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Developed an LLM-based application using LangChain
-                            and LangGraph, creating chains in each LangGraph
-                            node and a complete StateGraph AI workflow for
-                            vendor statement standardization and invoice
-                            validation in Vendor Statement Reconciliation.
-                        </li>
-                        <li>
-                            Automated reconciliation using Python and pandas,
-                            detecting Overpayments, Underpayments, Missing
-                            Invoices, Obsolete transactions, and Pending Queries
-                            for accurate financial reporting.
-                        </li>
-                        <li>
-                            Implemented LLM-based OCR to extract invoice data
-                            from SAP PDFs, ensuring precise validation of
-                            overpayments and underpayments.
-                        </li>
-                        <li>
-                            Integrated monitoring with LangSmith, enhancing
-                            workflow observability and performance tracking.
-                        </li>
-                        <li>
-                            Led end-to-end project execution, including
-                            requirement gathering, architecture design,
-                            development, testing, and GitHub actions CI/CD
-                            across multiple regions.
-                        </li>
-                        <li>
-                            Also worked on Duplicate Payment detection system
-                            using Azure Data Factory, Azure Blob Storage, and
-                            custom Python logic, applying direct and fuzzy
-                            matching.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="company-block">
-                    <h4>Evabot <span class="location">Remote</span></h4>
-                    <div class="role">
-                        Senior AI & Backend Engineer
-                        <span class="date">Oct 2023 – Apr 2024</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Owned ML backend in Evabot, developing applications
-                            from scratch and leading the architecture.
-                        </li>
-                        <li>
-                            Designed Rapport Dashboard and Sales Enablement
-                            extension with Flask Restful, Celery, MongoDB, and
-                            Pusher integration.
-                        </li>
-                        <li>
-                            Implemented OpenAI GPT-4 and GPT-4 turbo LLM (Large
-                            Language Model) for real-time and streaming language
-                            model responses.
-                        </li>
-                        <li>
-                            Led the development of a versatile crawler
-                            application for user and company-specific data
-                            gathering.
-                        </li>
-                        <li>
-                            Architected and implemented the Retrieval Augmented
-                            Generation (RAG) application, utilising a hybrid
-                            method (sparse and dense vectors) for storing
-                            chunks.
-                        </li>
-                        <li>
-                            Engineered an efficient system optimising CPU usage
-                            through a multithreaded approach per batch.
-                            Implemented Celery workers for background
-                            processing, ensuring non-overloading execution of
-                            Vector DB tasks.
-                        </li>
-                    </ul>
-                    <div class="role">
-                        AI & Backend Engineer
-                        <span class="date">Jun 2022 – Sep 2023</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Engineered and deployed Nudge Generating application
-                            backend, integrating third-party APIs and developing
-                            web crawlers using Selenium for data collection.
-                        </li>
-                        <li>
-                            Ensured a seamless user experience by running
-                            background services on separate threads, optimizing
-                            data access with Redis caching, and deploying web
-                            crawlers to Heroku and Amazon EC2 for regular
-                            updates.
-                        </li>
-                        <li>
-                            Leveraged OpenAI GPT-4 LLM (Large Language Model)
-                            for generating engaging email content and nudge
-                            headlines.
-                        </li>
-                        <li>
-                            Combined content-based and collaborative-based
-                            recommendation engines to deliver personalized
-                            suggestions.
-                        </li>
-                        <li>
-                            Containerized and orchestrated the Recommendation
-                            Engine with Docker and docker-compose, deploying it
-                            to Amazon EC2 for reliable production.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="company-block">
-                    <h4>Dell <span class="location">Bangalore</span></h4>
-                    <div class="role">
-                        Software Developer Engineer 1
-                        <span class="date">Sep 2021 – Jun 2022</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Engineered a robust Recommendation System with a
-                            focus on scalability.
-                        </li>
-                        <li>
-                            Designed and implemented a batch-processing
-                            framework capable of handling millions of requests
-                            efficiently.
-                        </li>
-                        <li>
-                            We enhanced Dell's global e-commerce platform by
-                            integrating recommendation strategies.
-                        </li>
-                        <li>
-                            Strategically increased overall sales by deploying
-                            recommendations, such as suggesting compatible
-                            accessories and warranties.
-                        </li>
-                        <li>
-                            Implemented online and offline recommendation
-                            systems, optimizing the user experience on the Dell
-                            e-commerce website and engaging users through
-                            personalized email suggestions.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="company-block">
-                    <h4>
-                        Smart Controls <span class="location">Bangalore</span>
-                    </h4>
-                    <div class="role">
-                        Software Developer Engineer
-                        <span class="date">Dec 2019 – Sep 2021</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Developed IIOT applications for the tyre industry,
-                            focusing on predicting tyre production through daily
-                            inventory and resource availability.
-                        </li>
-                        <li>
-                            Conducted Exploratory Data Analysis (EDA) on a large
-                            dataset, addressing challenges posed by high data
-                            redundancy.
-                        </li>
-                        <li>
-                            Initiated modeling with Linear Regression,
-                            implementing regularization techniques like Ridge
-                            Regression, but achieved suboptimal results.
-                        </li>
-                        <li>
-                            Transitioned to Random Forest, achieving
-                            significantly improved predictive performance.
-                        </li>
-                        <li>
-                            Explored deep learning approaches, experimenting
-                            with RNN models, and ultimately built a successful
-                            model using LSTM (Long Short-Term Memory).
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="company-block">
-                    <h4>Agrogram <span class="location">Remote</span></h4>
-                    <div class="role">
-                        Backend Developer Intern
-                        <span class="date">May 2019 – Jun 2019</span>
-                    </div>
-                    <ul>
-                        <li>
-                            Pioneered development efforts at Agrogram, an
-                            early-stage startup, contributing since its
-                            inception.
-                        </li>
-                        <li>
-                            Developed an Android app that facilitates farmers
-                            through an e-commerce platform for agricultural
-                            materials.
-                        </li>
-                        <li>
-                            Utilized Express and Node.js to craft robust APIs
-                            and implemented Mongoose ORM for MongoDB as the
-                            backend database.
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="skills-section">
-                <h3>🛠 Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-box">
-                        <div class="skill-title">
-                            Programming and Frameworks
+            <div class="timeline">
+                <!-- Quantzig -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Quantzig <span class="company-sub">| AB InBev</span></h3>
+                                <h4>Senior AI Engineer</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Apr 2024 – Present</span>
+                                <span class="timeline-location">Bangalore</span>
+                            </div>
                         </div>
-                        <div class="skill-items">
-                            <span>Python</span> <span>Flask</span>
-                            <span>Flask Restful</span> <span>Django</span>
-                            <span>Celery</span> <span>JavaScript</span>
-                            <span>Node.js</span> <span>Express</span>
-                            <span>Docker</span> <span>Git</span>
-                            <span>REST API</span>
-                            <span>Microservice Architecture</span>
-                        </div>
-                    </div>
-                    <div class="skill-box">
-                        <div class="skill-title">Databases</div>
-                        <div class="skill-items">
-                            <span>MongoDB</span> <span>SQL</span>
-                            <span>Pinecone (Vector DB)</span>
-                        </div>
-                    </div>
-                    <div class="skill-box">
-                        <div class="skill-title">
-                            Web Scraping and Automation
-                        </div>
-                        <div class="skill-items">
-                            <span>Selenium</span> <span>Beautiful Soup</span>
-                        </div>
-                    </div>
-                    <div class="skill-box">
-                        <div class="skill-title">AI/ML</div>
-                        <div class="skill-items">
-                            <span>NumPy</span> <span>Pandas</span>
-                            <span>Matplotlib</span> <span>Scikit-learn</span>
-                            <span>LangChain</span> <span>LangGraph</span>
-                            <span>LangSmith</span> <span>ReACT Agents</span>
-                            <span>HuggingFace</span>
-                            <span>OpenAI Models & API</span>
-                            <span>Claude (Sonnet, Haiku, Opus)</span>
-                            <span>OpenWebUI</span> <span>Ollama</span>
-                            <span>Azure AI services</span>
-                            <span>Azure Data Factory (ADF)</span>
-                            <span>Databricks</span> <span>PySpark</span>
+                        <ul class="timeline-bullets">
+                            <li>Developed an LLM-based Vendor Statement Reconciliation system using FastAPI, LangChain &amp; LangGraph, building a complete StateGraph AI workflow that <span class="metric">reduced manual reconciliation effort by ~70%</span>.</li>
+                            <li>Automated detection of Overpayments, Underpayments, Missing Invoices &amp; Obsolete transactions using Python + pandas, <span class="metric">improving financial reporting accuracy by ~40%</span>.</li>
+                            <li>Implemented LLM-based OCR to extract invoice data from SAP PDFs, <span class="metric">cutting data extraction time by ~60%</span> with precise validation.</li>
+                            <li>Integrated LangSmith monitoring across all LLM pipelines, <span class="metric">reducing debugging time by ~35%</span> with full workflow observability.</li>
+                            <li>Led end-to-end delivery — requirements, architecture, dev, testing &amp; GitHub Actions CI/CD across multiple regions, <span class="metric">reducing deployment time by ~50%</span>.</li>
+                            <li>Built a Duplicate Payment Detection system using Azure Data Factory &amp; Blob Storage with fuzzy matching, <span class="metric">flagging ~95% of duplicate transactions</span> before processing.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>FastAPI</span><span>LangChain</span><span>LangGraph</span>
+                            <span>LangSmith</span><span>Azure Data Factory</span><span>Python</span>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="projects-section">
-                <h3>🚀 Projects</h3>
-                <ul>
-                    <li>
-                        <strong>Gift Recommender:</strong> Designed and
-                        implemented a profitable recommendation system for gift
-                        boxes based on user preferences, demonstrating skills in
-                        recommendation algorithms and profit optimization.
-                    </li>
-                    <li>
-                        <strong>IMDB Sentiment App:</strong> Created a web
-                        application for sentiment analysis on IMDB movie
-                        reviews, highlighting proficiency in web automation
-                        (Selenium) and sentiment analysis techniques.
-                    </li>
-                    <li>
-                        <strong>Quora Duplicates (NLP):</strong> Implemented an
-                        NLP model for detecting duplicate questions on the
-                        Kaggle Quora dataset, showcasing natural language
-                        processing and classification skills.
-                    </li>
-                    <li>
-                        <strong>Flipkart Scraper:</strong> Developed a web
-                        scraper for extracting product information from
-                        Flipkart, demonstrating proficiency in web scraping and
-                        data extraction techniques.
-                    </li>
-                </ul>
-            </section>
+                <!-- Evabot -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Evabot</h3>
+                                <h4>Senior AI &amp; Backend Engineer <span class="role-dates">(Oct 2023 – Apr 2024)</span></h4>
+                                <h4 style="margin-top:8px">AI &amp; Backend Engineer <span class="role-dates">(Jun 2022 – Sep 2023)</span></h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jun 2022 – Apr 2024</span>
+                                <span class="timeline-location">Remote</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Architected the end-to-end ML backend platform using FastAPI, Celery &amp; MongoDB, <span class="metric">improving system latency by ~30%</span>.</li>
+                            <li>Built a hybrid RAG retrieval system (sparse + dense vectors with Pinecone), <span class="metric">improving document retrieval accuracy by ~35%</span> over single-vector search.</li>
+                            <li>Implemented streaming LLM responses (GPT-4 / GPT-4 Turbo), <span class="metric">reducing perceived response latency by ~40%</span> for end users.</li>
+                            <li>Designed &amp; launched Rapport Dashboard and Sales Enablement extension, <span class="metric">boosting sales productivity by ~25%</span> with real-time AI insights via Pusher.</li>
+                            <li>Engineered multithreaded batch processing pipeline with Celery workers, <span class="metric">reducing Vector DB ingestion time by ~45%</span> while maintaining safe CPU utilization.</li>
+                            <li>Built Redis caching for high-frequency APIs, <span class="metric">improving average response times by ~50%</span>. Containerized on AWS EC2 with 99.5% production uptime.</li>
+                            <li>Used GPT-4 for personalized email generation &amp; sales nudges, <span class="metric">improving email engagement rates by ~30%</span>.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>FastAPI</span><span>Celery</span><span>MongoDB</span><span>Pinecone</span>
+                            <span>GPT-4</span><span>Redis</span><span>Docker</span><span>AWS EC2</span>
+                        </div>
+                    </div>
+                </div>
 
-            <section class="education-section">
-                <h3>🎓 Education</h3>
-                <ul>
-                    <li>
-                        <strong>B.E. (CSE)</strong> – MITS Gwalior, RGPV
-                        University – 7.85 CGPA (2016–2020)
-                    </li>
-                    <li>
-                        <strong>12th CBSE</strong> – The Radiant School – 82.2%
-                    </li>
-                </ul>
-            </section>
+                <!-- Dell -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Dell</h3>
+                                <h4>Software Development Engineer 1</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Sep 2021 – Jun 2022</span>
+                                <span class="timeline-location">Bangalore</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Engineered a scalable Recommendation System with a batch-processing framework handling millions of requests per day with low latency.</li>
+                            <li>Integrated recommendations into Dell's global e-commerce platform, <span class="metric">contributing to ~15% increase in accessory &amp; warranty upsell revenue</span>.</li>
+                            <li>Deployed online + offline recommendation modes (personalized website suggestions &amp; email campaigns), <span class="metric">boosting user engagement by ~18%</span>.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Recommendation Systems</span><span>Batch Processing</span><span>E-Commerce</span>
+                        </div>
+                    </div>
+                </div>
 
-            <section class="awards-section">
-                <h3>🏆 Awards</h3>
-                <ul>
-                    <li>AIR 70 in TCS CodeVita Season 8 (Zonal Rank 49)</li>
-                    <li>98.61 percentile in AMCAT Quant</li>
-                    <li>CodeChef SnackDown 2017 – Rank 2591</li>
-                </ul>
-            </section>
-        </div>
+                <!-- Smart Controls -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Smart Controls</h3>
+                                <h4>Software Development Engineer</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Dec 2019 – Sep 2021</span>
+                                <span class="timeline-location">Bangalore</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Developed IIoT predictive applications for tyre production forecasting, enabling <span class="metric">~20% better resource planning</span> through daily inventory modeling.</li>
+                            <li>Transitioned from Linear/Ridge Regression to Random Forest, achieving <span class="metric">~30% improvement in prediction accuracy</span> on high-redundancy industrial datasets.</li>
+                            <li>Integrated predictive models into a Flask API with optimized data pipelines, <span class="metric">reducing real-time inference latency by ~25%</span>.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Flask</span><span>Random Forest</span><span>IIoT</span><span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="section-header">
+                <span class="section-tag">SKILLS</span>
+                <h2>Technologies I work with.</h2>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">AI &amp; Machine Learning</h4>
+                    <div class="skill-pills">
+                        <span>LangChain</span><span>LangGraph</span><span>LangSmith</span>
+                        <span>OpenAI API</span><span>Claude (Sonnet/Haiku/Opus)</span>
+                        <span>RAG Systems</span><span>ReACT Agents</span>
+                        <span>HuggingFace</span><span>Scikit-learn</span>
+                        <span>Ollama</span><span>OpenWebUI</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">Backend &amp; APIs</h4>
+                    <div class="skill-pills">
+                        <span>Python</span><span>FastAPI</span><span>Flask</span>
+                        <span>Django</span><span>Node.js</span><span>Express</span>
+                        <span>REST APIs</span><span>Celery</span><span>Microservices</span>
+                        <span>Selenium</span><span>BeautifulSoup</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">Databases &amp; Infra</h4>
+                    <div class="skill-pills">
+                        <span>MongoDB</span><span>SQL</span><span>Redis</span>
+                        <span>Pinecone (Vector DB)</span><span>Docker</span>
+                        <span>AWS EC2</span><span>Azure</span>
+                        <span>Azure Data Factory</span><span>Azure Blob Storage</span>
+                        <span>Azure Databricks</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h4 class="skill-group-title">Data &amp; Analytics</h4>
+                    <div class="skill-pills">
+                        <span>Numpy</span><span>Pandas</span><span>Matplotlib</span>
+                        <span>PySpark</span><span>Git</span><span>GitHub Actions</span>
+                        <span>CI/CD</span><span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <div class="section-header">
+                <span class="section-tag">PROJECTS</span>
+                <h2>Selected Work</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-number">01</div>
+                    <h3>LLM Reconciliation Platform</h3>
+                    <p>StateGraph AI workflow using LangGraph + OCR + FastAPI for vendor statement reconciliation &amp; payment anomaly detection. Reduced manual effort by 70%.</p>
+                    <div class="project-tags">
+                        <span>LangGraph</span><span>FastAPI</span><span>OCR</span><span>Azure</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-number">02</div>
+                    <h3>Hybrid RAG Engine</h3>
+                    <p>Sparse + dense vector retrieval system using Pinecone with streaming GPT-4 responses. Improved retrieval accuracy 35% over single-vector search.</p>
+                    <div class="project-tags">
+                        <span>Pinecone</span><span>GPT-4</span><span>Celery</span><span>FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-number">03</div>
+                    <h3>Gift Box Recommendation System</h3>
+                    <p>Profit-optimized recommendation engine using user preference data and smart bundling strategies. Improved profit margins by ~12%.</p>
+                    <div class="project-tags">
+                        <span>Collaborative Filtering</span><span>Python</span><span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-number">04</div>
+                    <h3>IMDB Sentiment Analysis App</h3>
+                    <p>Full-stack NLP sentiment analysis app on IMDB reviews using Selenium data pipeline. Achieved ~91% classification accuracy on the test dataset.</p>
+                    <div class="project-tags">
+                        <span>NLP</span><span>Selenium</span><span>Flask</span><span>Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-number">05</div>
+                    <h3>Quora Duplicate Question Detection</h3>
+                    <p>NLP classification model trained on the Kaggle Quora dataset for detecting semantically duplicate question pairs. Achieved ~88% F1-score.</p>
+                    <div class="project-tags">
+                        <span>NLP</span><span>Kaggle</span><span>Python</span><span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-number">06</div>
+                    <h3>Flipkart Web Scraper</h3>
+                    <p>Robust product data scraper using BeautifulSoup &amp; Selenium. Capable of extracting 10,000+ product records per hour reliably at scale.</p>
+                    <div class="project-tags">
+                        <span>BeautifulSoup</span><span>Selenium</span><span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+            <div class="section-header">
+                <span class="section-tag">EDUCATION &amp; RECOGNITION</span>
+                <h2>Academic &amp; Achievements</h2>
+            </div>
+
+            <div class="edu-awards-grid">
+                <div class="edu-col">
+                    <div class="edu-card reveal">
+                        <div class="edu-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <div>
+                            <h3>B.E. Computer Science</h3>
+                            <p class="edu-institution">Madhav Institute of Technology &amp; Science, Gwalior — RGPV University</p>
+                            <p class="edu-detail">CGPA: <strong>7.85</strong> &nbsp;·&nbsp; 2016 – 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-card reveal">
+                        <div class="edu-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Class 12 — CBSE</h3>
+                            <p class="edu-institution">The Radiant Higher Secondary School</p>
+                            <p class="edu-detail"><strong>82.2%</strong> &nbsp;·&nbsp; 2014 – 2015</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="awards-col">
+                    <div class="awards-card reveal">
+                        <h3>Certifications &amp; Awards</h3>
+                        <ul class="awards-list">
+                            <li>
+                                <span class="award-badge cert">CERT</span>
+                                Model Context Protocol: Advanced Topics
+                            </li>
+                            <li>
+                                <span class="award-badge cert">CERT</span>
+                                Introduction to Agent Skills
+                            </li>
+                            <li>
+                                <span class="award-badge cert">CERT</span>
+                                Introduction to Model Context Protocol
+                            </li>
+                            <li>
+                                <span class="award-badge cert">CERT</span>
+                                Claude Code in Action
+                            </li>
+                            <li>
+                                <span class="award-badge cert">CERT</span>
+                                Claude 101
+                            </li>
+                            <li>
+                                <span class="award-badge award">AIR</span>
+                                AIR 70 — TCS CodeVita Season 8 (Zonal Rank: 49)
+                            </li>
+                            <li>
+                                <span class="award-badge award">TOP</span>
+                                98.61 percentile — AMCAT Quantitative Aptitude
+                            </li>
+                            <li>
+                                <span class="award-badge award">RANK</span>
+                                Rank 2591 — CodeChef SnackDown 2017
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="contact-box reveal">
+                <span class="section-tag">CONTACT</span>
+                <h2>Let's build something great.</h2>
+                <p>Open for AI Engineering roles, Backend Architecture projects, Freelance work &amp; Product Consulting.</p>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/yashjaincodex" target="_blank" rel="noopener" class="contact-link">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        linkedin.com/in/yashjaincodex
+                    </a>
+                    <a href="https://github.com/yashjaincodex" target="_blank" rel="noopener" class="contact-link">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        github.com/yashjaincodex
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
         <footer>
-            <p>Made with ❤️ by Yash Jain</p>
+            <span>© 2026 Yash Jain</span>
+            <span class="footer-dot">·</span>
+            <span>Senior AI &amp; Backend Engineer</span>
+            <span class="footer-dot">·</span>
+            <span>Built with HTML, CSS &amp; JS</span>
         </footer>
-
-        <script src="script.js"></script>
     </body>
 </html>
